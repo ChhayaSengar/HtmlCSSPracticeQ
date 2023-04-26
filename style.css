@@ -1,0 +1,67 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ /* body {
+    height: 100vh;
+    background: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}  */
+/* parent have to  define as grid because we have to tell through how many need row and column */
+main {
+     /* width: 1200px;  */
+    background-color: #eeeeee;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    display: grid;
+    /* we want to 3 column */
+    grid-template-columns: repeat(3, 1fr);
+    /* after that we have to define height so what to do  */
+    /* height that means row, we need to define row  */
+    grid-template-rows: 100px 200px 200px 100px;
+    grid-gap: 40px;
+}
+
+header {
+    background-color: #d3c6b8;
+    /* we have to show the navbar straight. row don't touch. we touch only cloumn */
+    /* 1 means start from 1 and -1 means end from last */
+   grid-column: 1/-1;
+   padding: 5px;
+}
+
+aside {
+    background-color: #b09c98;
+    /* ak ki box jo ak row ki space bhi le rha hai. 2 means start from 2 and end from 4*/
+    grid-row: 2/4 ; 
+    /* or grid-row: 2/ span 2; */
+    padding: 5px;
+}
+
+.box1 {
+    background: #d3c6b8;
+    padding: 5px;
+}
+
+.box2 {
+    background-color: #b09c98;
+    padding: 5px;
+}
+
+/* .box3 {
+    background: #d3c6b8;
+} */
+
+.main-content {
+    background: #b1804b;
+    /*we wanna touch to end  */
+    grid-column: 2/-1;
+    padding: 5px;
+}
+
+footer {
+    background: #695949;
+    grid-column: 1/ -1;
+    padding: 5px;
+}

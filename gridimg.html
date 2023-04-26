@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* div{
+        display: flex;
+         max-width: 1200px;
+        width: 100%; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    
+    img{
+         width: 300px;
+        height: 200px; 
+       padding: 5px;
+
+    } */
+   /* body {
+    height: 100vh;
+    background: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}   */
+/* parent have to  define as grid because we have to tell through how many need row and column */
+div {
+      width: 1200px; 
+    display: grid;
+    /* we want to 3 column */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+    
+</style>
+<body>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+        
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+        
+       
+    </div>
+</body>
+</html>
